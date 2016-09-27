@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:esriUI="clr-namespace:Esri.ArcGISRuntime.Xamarin.Forms;assembly=Esri.ArcGISRuntime.Xamarin.Forms"
+		xmlns:mapping="clr-namespace:Esri.ArcGISRuntime.Mapping;assembly=Esri.ArcGISRuntime"
+		xmlns:local="clr-namespace:ArcGISRutnimeSamples01" 
+		x:Class="ArcGISRuntimeSamples01.ArcGISRuntimeSamples01Page">
+
+  <Grid>
+     <Grid.RowDefinitions>
+       <RowDefinition Height="*"/>
+       <RowDefinition Height="auto"/>
+     </Grid.RowDefinitions>
+     <esriUI:MapView x:Name="MyMapView"/>
+     <Button x:Name="changeBasemapButton" Text="背景地図" Clicked="OnChangeBasemapButtonClicked" Grid.Row="1" />
+  </Grid>	
+
+</ContentPage>
+
