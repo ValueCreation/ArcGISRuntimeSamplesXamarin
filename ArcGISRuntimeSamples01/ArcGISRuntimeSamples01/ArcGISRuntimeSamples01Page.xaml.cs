@@ -1,17 +1,9 @@
-﻿using Esri.ArcGISRuntime.Geometry;
-using Esri.ArcGISRuntime.Mapping;
+﻿using Esri.ArcGISRuntime.Mapping;
+using Esri.ArcGISRuntime.Geometry;
 using Esri.ArcGISRuntime.Tasks.Geocoding;
 using Esri.ArcGISRuntime.Symbology;
-using Esri.ArcGISRuntime.UI;
 using System;
-using System.Linq;
 using Xamarin.Forms;
-
-#if WINDOWS_UWP
-using Colors = Windows.UI.Colors;
-#else
-using Colors = System.Drawing.Color;
-#endif
 
 namespace ArcGISRuntimeSamples01
 {
@@ -25,7 +17,7 @@ namespace ArcGISRuntimeSamples01
 			"海洋図"
 		};
 
-		private GraphicsOverlay _polygonOverlay;
+		//private GraphicsOverlay _polygonOverlay;
 
 		public ArcGISRuntimeSamples01Page()
 		{
@@ -83,14 +75,15 @@ namespace ArcGISRuntimeSamples01
 			myMap.InitialViewpoint = new Viewpoint(initialLocation);
 
 			// ポリゴンの表示
-			CreateOverlay();
+			//CreateOverlay();
 
 			// ジオコーディング
-			var address = "東京都千代田区永田町２‐２‐２";
-			geocoding(address);
+			//var address = "東京都千代田区永田町２‐２‐２";
+			//geocoding(address);
 
 		}
 
+		/*
 		private void CreateOverlay()
 		{
 			// Create polygon builder and add polygon corners into it
@@ -121,7 +114,8 @@ namespace ArcGISRuntimeSamples01
 			// Add created overlay to the MapView
 			MyMapView.GraphicsOverlays.Add(_polygonOverlay);
 		}
-
+		*/
+		/*
 		public async void geocoding(string address)
 		{
 
@@ -172,6 +166,7 @@ namespace ArcGISRuntimeSamples01
 			}
 
 		}
+		*/
 
 	}
 }
