@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
+		prism:ViewModelLocator.AutowireViewModel="True" 
+		x:Class="PrismForms.Views.MainPage" 
+		Title="メインページ">
+
+	
+	<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+		<Label Text="{Binding Title}" />
+		<Button Text="3D地図" Command="{Binding NavigateNext1Command}"/>
+		<Button Text="背景地図" Command="{Binding NavigateNext2Command}"/>
+		<Button Text="スクリーンショット" Command="{Binding NavigateNext3Command}"/>
+	</StackLayout>
+</ContentPage>
