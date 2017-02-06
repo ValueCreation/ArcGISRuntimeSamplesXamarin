@@ -9,12 +9,14 @@
 		Title="背景地図">
 
   <Grid>
-    <Grid.RowDefinitions>
+
+   <Grid.RowDefinitions>
       <RowDefinition Height="*" />
       <RowDefinition Height="auto" />
     </Grid.RowDefinitions>
     <esriUI:MapView x:Name="MyMapView" />
-    <Button x:Name="changeBasemapButton" Text="背景地図の変更" Clicked="OnChangeBasemapButtonClicked" Grid.Row="1"/>
+    <Button x:Name="changeLayerButton" Text="背景地図" Clicked="OnChangeLayerButtonClicked" Grid.Row="1"/>
+
   </Grid>
 	
 </ContentPage>

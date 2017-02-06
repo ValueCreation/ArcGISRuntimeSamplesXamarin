@@ -5,7 +5,6 @@
 		prism:ViewModelLocator.AutowireViewModel="True" 
 		x:Class="PrismForms.Views.MainPage" 
 		Title="メインページ">
-
 	
 	<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
 		<Label Text="{Binding Title}" />
