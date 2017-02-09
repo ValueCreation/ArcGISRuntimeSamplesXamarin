@@ -1,5 +1,5 @@
 # ArcGISRuntimeSamplesXamarin
-ArcGIS Runtime SDK for Xamarin のサンプル集です。
+ArcGIS Runtime SDK for .NET の Xamarin サンプル集です。
 
 ## 使用している製品
 * [ArcGIS Runtime SDK for .NET](https://developers.arcgis.com/net/)
