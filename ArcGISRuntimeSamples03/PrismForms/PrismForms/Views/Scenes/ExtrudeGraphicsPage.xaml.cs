@@ -26,7 +26,7 @@ namespace PrismForms.Views
 
 		private double squareSize = 0.01;
 		private double spacing = 0.01;
-		private int maxHeight = 100000;
+		private int maxHeight = 10000;
 
 		private GraphicsOverlay graphicsOverlay;
 
@@ -64,20 +64,15 @@ namespace PrismForms.Views
 
 		private void addGraphics()
 		{
+			
+			//var camera = new Camera(28.4, 83, 20000, 10, 70, 300)
+			//var x = camera.Location.X - 0.01;
+			//var y = camera.Location.Y- 0.25;
+			var type = new ViewpointType();
+			var extent = MySceneView.GetCurrentViewpoint(type).TargetGeometry.Extent;
 
-			var camera = new Camera(28.4, 83, 20000, 10, 70, 300);
-
-			double x = camera.Location.X - 0.01;
-			double y = camera.Location.Y- 0.25;
-
-			//var type = new ViewpointType();
-			//new ViewpointType
-			//var extent = MySceneView.GetCurrentViewpoint(new ViewpointType()).TargetGeometry.Extent;
-
-			//var x = extent.XMin - 0.01;
-			//var y = extent.YMax - 0.25;
-			//var x = extent.XMax - 0.01;
-			//var y = extent.YMax - 0.25;
+			var x = extent.XMin - 0.01;
+			var y = extent.YMax - 0.25;
 
 			for (int i=0; i<6; i++)
 			{

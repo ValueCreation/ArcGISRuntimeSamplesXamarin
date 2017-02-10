@@ -7,6 +7,7 @@
 		Title="Scenes">
 
 		<StackLayout Margin="0, 20, 0, 0">
+			<Button Text="3D地図表示" Clicked="OnDiplaySceneClicked" /> 
 			<Button Text="グラフィックス表示" Clicked="OnExtrudeGraphicsClicked" /> 
 
 
