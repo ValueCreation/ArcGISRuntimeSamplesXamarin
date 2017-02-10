@@ -25,17 +25,32 @@ namespace PrismForms.Views
 			};
 			diplaySceneButton.Clicked += OnDiplaySceneClicked;
 
+			var sceneSymbolsButton = new Button
+			{
+				Text = "3Dシンボル",
+				HorizontalOptions = LayoutOptions.FillAndExpand,
+				BackgroundColor = Color.FromHex("ECECEC")
+			};
+			sceneSymbolsButton.Clicked += OnSceneSymbolsClicked;
+
+
+
 			Content = new StackLayout
 			{
 				Margin = new Thickness(0, 20, 0, 0),
 				Children = {
 					diplaySceneButton,
-					extrudeGraphicsButton
+					extrudeGraphicsButton,
+					sceneSymbolsButton
 				}
 			};
 
 		}
 
+		async void OnSceneSymbolsClicked(object sender, EventArgs e)
+		{ 
+			await Navigation.PushAsync(new SceneSymbolsPage());
+		}
 
 		async void OnDiplaySceneClicked(object sender, EventArgs e)
 		{

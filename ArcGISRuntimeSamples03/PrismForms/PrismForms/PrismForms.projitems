@@ -30,6 +30,9 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MapsListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Scenes\SceneSymbolsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Scenes\DisplayScenePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -61,6 +64,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MapsListPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\Scenes\DisplayScenePage.xaml.cs">
       <DependentUpon>DisplayScenePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Scenes\SceneSymbolsPage.xaml.cs">
+      <DependentUpon>SceneSymbolsPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
