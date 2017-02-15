@@ -71,8 +71,8 @@ namespace PrismForms.Views
 			var type = new ViewpointType();
 			var extent = MySceneView.GetCurrentViewpoint(type).TargetGeometry.Extent;
 
-			var x = extent.XMin - 0.01;
-			var y = extent.YMax - 0.25;
+			var x = extent.XMax - 0.01;
+			var y = extent.YMin + 0.25;
 
 			for (int i=0; i<6; i++)
 			{

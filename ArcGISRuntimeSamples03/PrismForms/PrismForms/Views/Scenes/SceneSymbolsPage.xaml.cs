@@ -62,7 +62,7 @@ namespace PrismForms.Views
 
 			var coneSymbol = new SimpleMarkerSceneSymbol{				
 				Style = SimpleMarkerSceneSymbolStyle.Cone,
-				Color = randColor(),
+				Color = Colors.Red,
 				Width = 200,
 				Height = 200,
 				Depth = 200,
@@ -72,7 +72,7 @@ namespace PrismForms.Views
 			var cubeSymbol = new SimpleMarkerSceneSymbol
 			{
 				Style = SimpleMarkerSceneSymbolStyle.Cube,
-				Color = randColor(),
+				Color = Colors.Aqua,
 				Width = 200,
 				Height = 200,
 				Depth = 200,
@@ -82,7 +82,7 @@ namespace PrismForms.Views
 			var cylinderSymbol = new SimpleMarkerSceneSymbol
 			{
 				Style = SimpleMarkerSceneSymbolStyle.Cylinder,
-				Color = randColor(),
+				Color = Colors.Yellow,
 				Width = 200,
 				Height = 200,
 				Depth = 200,
@@ -92,7 +92,7 @@ namespace PrismForms.Views
 			var diamondSymbol = new SimpleMarkerSceneSymbol
 			{
 				Style = SimpleMarkerSceneSymbolStyle.Diamond,
-				Color = randColor(),
+				Color = Colors.Blue,
 				Width = 200,
 				Height = 200,
 				Depth = 200,
@@ -102,7 +102,7 @@ namespace PrismForms.Views
 			var sphereSymbol = new SimpleMarkerSceneSymbol
 			{
 				Style = SimpleMarkerSceneSymbolStyle.Sphere,
-				Color = randColor(),
+				Color = Colors.Green,
 				Width = 200,
 				Height = 200,
 				Depth = 200,
@@ -112,7 +112,7 @@ namespace PrismForms.Views
 			var tetrahedronSymbol = new SimpleMarkerSceneSymbol
 			{
 				Style = SimpleMarkerSceneSymbolStyle.Tetrahedron,
-				Color = randColor(),
+				Color = Colors.Lime,
 				Width = 200,
 				Height = 200,
 				Depth = 200,
@@ -133,8 +133,7 @@ namespace PrismForms.Views
 
 			foreach (SimpleMarkerSceneSymbol symbol in symbols)
 			{
-				x = x + 0.01 * i;
-				var point = new MapPoint(x, y, z, SpatialReferences.Wgs84);
+				var point = new MapPoint(x + 0.01 * i, y, z, SpatialReferences.Wgs84);
 				var graphic = new Graphic(point, symbol);
 				graphicsOverlay.Graphics.Insert(i, graphic);
 				i = i + 1;

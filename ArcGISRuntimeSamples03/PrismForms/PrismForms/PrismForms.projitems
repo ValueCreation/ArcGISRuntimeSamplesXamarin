@@ -36,6 +36,9 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Scenes\DisplayScenePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Scenes\SurfacePlacementsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -67,6 +70,9 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\Scenes\SceneSymbolsPage.xaml.cs">
       <DependentUpon>SceneSymbolsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Scenes\SurfacePlacementsPage.xaml.cs">
+      <DependentUpon>SurfacePlacementsPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
