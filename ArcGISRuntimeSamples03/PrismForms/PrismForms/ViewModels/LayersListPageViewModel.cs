@@ -8,17 +8,19 @@ using System.Windows.Input;
 
 namespace PrismForms.ViewModels
 {
-	public class MapsListPageViewModel : BindableBase
+	public class LayersListPageViewModel : BindableBase
 	{
 		private readonly INavigationService _navigationService;
-		public ICommand GoBack2Command { get; }
-		public MapsListPageViewModel(INavigationService navigationService)
+		public ICommand GoBack3Command { get; }
+		public LayersListPageViewModel(INavigationService navigationService)
 		{
 			_navigationService = navigationService;
-			GoBack2Command = new DelegateCommand(() =>
+			GoBack3Command = new DelegateCommand(() =>
 			{
 				_navigationService.GoBackAsync();
 			});
+
 		}
 	}
 }
+

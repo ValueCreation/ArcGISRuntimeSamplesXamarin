@@ -20,6 +20,8 @@ namespace PrismForms.ViewModels
 		private readonly INavigationService _navigationService;
 		public ICommand NavigateMapsListPageCommand { get; }
 		public ICommand NavigateScenesListPageCommand { get; }
+		public ICommand NavigateLayersListPageCommand { get; }
+		public ICommand NavigateFeaturesListPageCommand { get; }
 
 		public MainPageViewModel(INavigationService navigationService)
 		{
@@ -33,6 +35,16 @@ namespace PrismForms.ViewModels
 			NavigateScenesListPageCommand = new DelegateCommand(() =>
 			{
 				_navigationService.NavigateAsync("ScenesListPage");
+			});
+
+			NavigateLayersListPageCommand = new DelegateCommand(() =>
+			{
+				_navigationService.NavigateAsync("LayersListPage");
+			});
+
+			NavigateFeaturesListPageCommand = new DelegateCommand(() =>
+			{
+				_navigationService.NavigateAsync("FeaturesListPage");
 			});
 		
 		}

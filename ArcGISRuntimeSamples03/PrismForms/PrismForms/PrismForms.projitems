@@ -39,6 +39,18 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Layers\ArcGISMapImageLayerUrlPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\LayersListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\FeaturesListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Features\FeatureLayerQueryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -74,10 +86,26 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\Scenes\SurfacePlacementsPage.xaml.cs">
       <DependentUpon>SurfacePlacementsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Layers\ArcGISMapImageLayerUrlPage.xaml.cs">
+      <DependentUpon>ArcGISMapImageLayerUrlPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\LayersListPage.xaml.cs">
+      <DependentUpon>LayersListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LayersListPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\FeaturesListPage.xaml.cs">
+      <DependentUpon>FeaturesListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\FeaturesListPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Features\FeatureLayerQueryPage.xaml.cs">
+      <DependentUpon>FeatureLayerQueryPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Views\Maps\" />
     <Folder Include="$(MSBuildThisFileDirectory)Views\Scenes\" />
     <Folder Include="$(MSBuildThisFileDirectory)Images\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Views\Layers\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Views\Features\" />
   </ItemGroup>
 </Project>

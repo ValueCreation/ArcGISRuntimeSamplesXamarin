@@ -49,9 +49,9 @@
             <Label Text="0" Grid.Row="0" HorizontalTextAlignment="End" VerticalTextAlignment="End" TextColor="White" FontSize="10" Grid.ColumnSpan="2" />
 
 			<Button Text = "MAPS" Grid.Row="1" Grid.Column="0" Command="{Binding NavigateMapsListPageCommand}" Style="{StaticResource darkerButton}" />
-            <Button Text = "LAYERS" Grid.Row="1" Grid.Column="1" Style="{StaticResource darkerButton}" />
+            <Button Text = "LAYERS" Grid.Row="1" Grid.Column="1" Command="{Binding NavigateLayersListPageCommand}" Style="{StaticResource darkerButton}" />
 
-			<Button Text = "FEATURES" Grid.Row="2" Grid.Column="0" Style="{StaticResource darkerButton}" />
+			<Button Text = "FEATURES" Grid.Row="2" Grid.Column="0" Command="{Binding NavigateFeaturesListPageCommand}" Style="{StaticResource darkerButton}" />
             <Button Text = "DISPLAY INFORMATION" Grid.Row="2" Grid.Column="1" Style="{StaticResource darkerButton}" />
 
             <Button Text = "SEARCH" Grid.Row="3" Grid.Column="0" Style="{StaticResource darkerButton}" />

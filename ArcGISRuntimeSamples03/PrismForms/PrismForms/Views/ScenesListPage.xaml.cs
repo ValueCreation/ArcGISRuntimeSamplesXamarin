@@ -19,7 +19,7 @@ namespace PrismForms.Views
 
 			var extrudeGraphicsButton = new Button
 			{
-				Text = "グラフィックスの表示",
+				Text = "3Dグラフィック表示",
 				HorizontalOptions = LayoutOptions.FillAndExpand,
 				BackgroundColor = Color.FromHex("ECECEC")
 			};
@@ -27,7 +27,7 @@ namespace PrismForms.Views
 
 			var sceneSymbolsButton = new Button
 			{
-				Text = "3Dシンボル",
+				Text = "3Dシンボル表示",
 				HorizontalOptions = LayoutOptions.FillAndExpand,
 				BackgroundColor = Color.FromHex("ECECEC")
 			};
@@ -40,7 +40,6 @@ namespace PrismForms.Views
 				BackgroundColor = Color.FromHex("ECECEC")
 			};
 			surfacePlacementsButton.Clicked += OnSurfacePlacementsClicked;
-
 
 			Content = new StackLayout
 			{

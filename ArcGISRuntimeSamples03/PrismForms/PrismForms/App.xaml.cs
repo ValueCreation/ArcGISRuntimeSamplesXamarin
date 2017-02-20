@@ -22,8 +22,9 @@ namespace PrismForms
 			Container.RegisterTypeForNavigation<MainPage>();
 
 			Container.RegisterTypeForNavigation<MapsListPage>();
-
 			Container.RegisterTypeForNavigation<ScenesListPage>();
+			Container.RegisterTypeForNavigation<LayersListPage>();
+			Container.RegisterTypeForNavigation<FeaturesListPage>();
 
 		}
 	}
