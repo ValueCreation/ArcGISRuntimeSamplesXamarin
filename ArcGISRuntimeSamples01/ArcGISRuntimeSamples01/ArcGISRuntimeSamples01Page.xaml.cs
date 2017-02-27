@@ -20,8 +20,6 @@ namespace ArcGISRuntimeSamples01
 		public ArcGISRuntimeSamples01Page()
 		{
 
-			//MyMapView = new Esri.ArcGISRuntime.Xamarin.Forms.MapView();
-
 			InitializeComponent();
 
 			Title = "背景地図";
@@ -37,7 +35,7 @@ namespace ArcGISRuntimeSamples01
 				await DisplayActionSheet("背景地図の選択", "キャンセル", null, titles);
 
 			if (selectedBasemap == "Cancel") return;
-
+			// 背景地図の選択
 			switch (selectedBasemap)
 			{
 				case "地形図":
@@ -60,7 +58,7 @@ namespace ArcGISRuntimeSamples01
 
 		private void Initialize()
 		{
-			// 背景地図の作成
+			// 背景地図（地形図）の設定と初期表示の位置を設定
 			Map myMap = new Map(BasemapType.Topographic, 35.6761, 139.7379, 10);
 
 			MyMapView.Map = myMap;
