@@ -18,29 +18,35 @@ namespace PrismForms.ViewModels
 		}
 
 		private readonly INavigationService _navigationService;
-		public ICommand NavigateNext1Command { get; }
-		public ICommand NavigateNext2Command { get; }
-		public ICommand NavigateNext3Command { get; }
+		public ICommand NavigateMapsListPageCommand { get; }
+		public ICommand NavigateScenesListPageCommand { get; }
+		public ICommand NavigateLayersListPageCommand { get; }
+		public ICommand NavigateFeaturesListPageCommand { get; }
 
 		public MainPageViewModel(INavigationService navigationService)
 		{
 			_navigationService = navigationService;
 
-			NavigateNext1Command = new DelegateCommand(() =>
+			NavigateMapsListPageCommand = new DelegateCommand(() =>
 			{
-				_navigationService.NavigateAsync("Next1Page");
+				_navigationService.NavigateAsync("MapsListPage");
 			});
 
-			NavigateNext2Command = new DelegateCommand(() =>
+			NavigateScenesListPageCommand = new DelegateCommand(() =>
 			{
-				_navigationService.NavigateAsync("Next2Page");
+				_navigationService.NavigateAsync("ScenesListPage");
 			});
 
-			NavigateNext3Command = new DelegateCommand(() =>
+			NavigateLayersListPageCommand = new DelegateCommand(() =>
 			{
-				_navigationService.NavigateAsync("Next3Page");
+				_navigationService.NavigateAsync("LayersListPage");
 			});
 
+			NavigateFeaturesListPageCommand = new DelegateCommand(() =>
+			{
+				_navigationService.NavigateAsync("FeaturesListPage");
+			});
+		
 		}
 
 		public void OnNavigatedFrom(NavigationParameters parameters)

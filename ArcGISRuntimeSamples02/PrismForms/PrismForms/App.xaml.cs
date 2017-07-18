@@ -12,16 +12,19 @@ namespace PrismForms
 		{
 			InitializeComponent();
 
-			NavigationService.NavigateAsync("NavigationPage/MainPage?title=Xamarin%20Advent%20Calendar");
+			//NavigationService.NavigateAsync("NavigationPage/MainPage?title=Xamarin%20Advent%20Calendar");
+			NavigationService.NavigateAsync("NavigationPage/MainPage");
 		}
 
 		protected override void RegisterTypes()
 		{
 			Container.RegisterTypeForNavigation<NavigationPage>();
 			Container.RegisterTypeForNavigation<MainPage>();
-			Container.RegisterTypeForNavigation<Next1Page>();
-			Container.RegisterTypeForNavigation<Next2Page>();
-			Container.RegisterTypeForNavigation<Next3Page>();
+
+			Container.RegisterTypeForNavigation<MapsListPage>();
+			Container.RegisterTypeForNavigation<ScenesListPage>();
+			Container.RegisterTypeForNavigation<LayersListPage>();
+			Container.RegisterTypeForNavigation<FeaturesListPage>();
 
 		}
 	}

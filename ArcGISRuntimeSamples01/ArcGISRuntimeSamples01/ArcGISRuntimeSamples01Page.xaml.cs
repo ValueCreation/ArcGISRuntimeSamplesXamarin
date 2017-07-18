@@ -36,7 +36,6 @@ namespace ArcGISRuntimeSamples01
 
 			if (selectedBasemap == "Cancel") return;
 			// 背景地図の選択
-			switch (selectedBasemap)
 			{
 				case "地形図":
 					MyMapView.Map.Basemap = Basemap.CreateTopographic();
